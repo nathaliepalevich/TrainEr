@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
   },
   {
-    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
-    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
-  },
-  {
     "revision": "85d339d916479f729938d2911b85bf1f",
     "url": "/fonts/Lato-Bold.85d339d9.ttf"
   },
   {
     "revision": "2d36b1a925432bae7f3c53a340868c6e",
     "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
+  },
+  {
+    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
+    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
     "revision": "19a7aee5aea55da0aa3a",
