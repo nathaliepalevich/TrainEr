@@ -1,0 +1,11 @@
+.users-page {
+  top: 64px;
+
+  .md-card-media .users-page {
+    cursor: pointer;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

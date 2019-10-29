@@ -1,0 +1,103 @@
+.form-container {
+  .md-field {
+    width: 40%;
+  }
+}
+
+.rating-part {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 7px 1px $clr1;
+}
+.hedding-title h1 {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+  font-size: 25px;
+}
+
+.average-rating h2 {
+  margin: 35px 0 5px;
+  font-size: 80px;
+}
+.average-rating p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.reviews h1 {
+  margin: 10px 0px 20px 30px;
+}
+.user-img-part {
+  min-height: 100px;
+  width: max-content;
+  float: left;
+  padding-right: 20px;
+}
+.user-img {
+  width: 48%;
+  float: left;
+}
+.user-text {
+  float: left;
+}
+.user-text h4,
+.user-text p {
+  margin: 0px 0px 5px 0px;
+}
+.user-text p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.user-text h4,
+.user-text span {
+  color: #b3b5b4;
+}
+.comment {
+  width: 68%;
+  float: right;
+}
+.report-btn {
+  color: #42424277;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.vue-star-rating {
+  justify-content: center;
+  margin: 2px;
+}
+.comment-part {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.md-avatar {
+  margin: 0.5px 5.5px !important;
+}
+
+@media screen and (max-width: 550px) {
+  .rating-part {
+    width: 100%;
+    margin: 0px;
+    &:first-child {
+      padding: 10px;
+    }
+    > div {
+      flex-direction: column;
+      .comment {
+        width: 92%;
+      }
+    }
+  }
+  .average-rating h2 {
+    margin: 0;
+  }
+  .reviews h1 {
+    margin-top: 0;
+  }
+
+  .user-img-part {
+    width: fit-content;
+  }
+}

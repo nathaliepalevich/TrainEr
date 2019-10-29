@@ -1,0 +1,148 @@
+.header-hero {
+  font-family: "lato-light";
+  .header-container {
+    background-image: url("../assets/images/trainer-desktop-bg.jpg");
+    background-size: cover;
+    background-position: 50%;
+    padding: 0 20px;
+    height: 100vh;
+    .left-container {
+      width: 65%;
+    }
+  }
+
+  .header-txt {
+    background-color: $clr3;
+    font-family: "lato-bold";
+    font-size: rem(30px);
+    h3 {
+      font-family: "Petit-formal";
+    }
+  }
+  .sub-header-txt {
+    font-size: rem(25px);
+  }
+  .scroll-btn {
+    color: $clr1;
+    font-weight: bold;
+    margin: rem(25px);
+    width: rem(562px);
+    button {
+      background-color: transparent;
+      border: none;
+      font-weight: bolder;
+      height: rem(40px);
+    }
+  }
+
+  #more-arrows {
+    width: rem(100px);
+    height: rem(80px);
+    &:hover {
+      polygon {
+        fill: $clr3;
+        transition: all 0.2s ease-out;
+        &.arrow-bottom {
+          transform: translateY(-18px);
+        }
+        &.arrow-top {
+          transform: translateY(18px);
+        }
+      }
+    }
+  }
+
+  polygon {
+    fill: $clr3;
+    transition: all 0.2s ease-out;
+    &.arrow-middle {
+      opacity: 0.75;
+    }
+    &.arrow-top {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (max-width: rem(768px)) {
+  .header-hero {
+    .header-container {
+      background-image: url("../assets/images/trainer-mobile-bg-xs.jpg");
+      margin-top: 0;
+      background-size: auto 353px;
+      background-position: 51% 15px;
+      background-repeat: no-repeat;
+      justify-content: center;
+
+      .left-container {
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        bottom: rem(60px);
+        .mobile-txt {
+          height: 47%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .header-txt {
+          font-size: rem(20px);
+          background-color: transparent;
+        }
+        .sub-header-txt {
+          font-size: rem(18px);
+        }
+        .scroll-btn {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem(490px)) {
+  .header-hero {
+    .header-container {
+      margin: 0;
+      justify-content: center;
+      .left-container {
+        width: 100%;
+        .mobile-txt {
+          height: 30%;
+          justify-content: start;
+          align-items: center;
+        }
+        .header-txt {
+          font-size: 1rem;
+        }
+        .sub-header-txt {
+          font-size: 1rem;
+        }
+        .scroll-btn {
+          width: 22.125rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem(310px)) {
+  .header-hero {
+    .header-container {
+      justify-content: center;
+      background-size: auto 255px;
+      background-position: top;
+      .left-container {
+        height: 100%;
+        .header-txt {
+          font-size: 1rem;
+        }
+        .sub-header-txt {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

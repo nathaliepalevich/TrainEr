@@ -1,0 +1,89 @@
+.signup {
+  font-family: "lato-light";
+  height: 100%;
+  padding: 20px;
+  top: 64px;
+  form {
+    min-width: 350px;
+    width: 100%;
+  }
+  textarea {
+    background-color: #fafafa !important;
+  }
+  .md-textarea {
+    height: 200px;
+    width: rem(400px);
+  }
+  .form-details {
+    width: 300px;
+    .md-has-value {
+      width: 100%;
+    }
+  }
+  .signup-container {
+    padding: 40px;
+  }
+  .form-container {
+    border: 1px solid black;
+    h1,
+    .btn-register {
+      padding: 10px;
+    }
+    .md-has-file,
+    .md-has-textarea {
+      width: 100%;
+    }
+  }
+  .form-input {
+    margin: 5px;
+  }
+}
+.none {
+  display: none;
+}
+.loading-spinner {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.swal2-header {
+  img {
+    width: 400px;
+    height: auto;
+  }
+}
+.swal2-actions {
+  button {
+    background: $clr2 !important;
+  }
+}
+@media screen and (max-width: rem(768px)) {
+  .signup {
+    .form-container {
+      .form-input {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem(425px)) {
+  .signup {
+    .form-container {
+      height: initial;
+    }
+    .md-textarea {
+      width: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: rem(350px)) {
+  .signup {
+    .form-details {
+      width: rem(250px);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.gm-style .gm-style-iw.gm-style-iw-c .gm-style-iw-d {
+  margin: 5px !important;
+  overflow: auto !important ;
+}
+
+.gm-style-iw.gm-style-iw-c {
+  padding: initial !important;
+}
+.gm-style-iw-d {
+  padding: 0 !important;
+}
+.popup img {
+  width: 230px;
+  height: 150px !important;
+  object-fit: fill;
+}
+.app-map-v {
+  width: 45%;
+  height: 87vh;
+}
+
+@media screen and (max-width: 960px) {
+  .app-map-v {
+    width: 100%;
+  }
+}

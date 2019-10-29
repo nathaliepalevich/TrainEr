@@ -1,0 +1,40 @@
+.calendar-container {
+  cursor: pointer;
+  height: 80vh;
+}
+
+.vuecal {
+  border-radius: 20px;
+}
+.vuecal:not(.vuecal--day-view) .vuecal__cell.selected {
+  background-color: rgb(221, 221, 221);
+}
+.vuecal:not(.vuecal--day-view) {
+  background-color: whitesmoke;
+}
+.vuecal__cell.selected:before {
+  border-color: rgb(5, 0, 0);
+}
+.vuecal__event {
+  background-color: $clr2 !important;
+  border: 1px solid $borderClr;
+  color: black !important;
+}
+
+.vuecal__event-content {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.vuecal__event-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 2px 0 4px;
+}
+
+.vuecal__event-time {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

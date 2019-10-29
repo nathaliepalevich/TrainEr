@@ -1,0 +1,33 @@
+.filter {
+  margin-bottom: 10px;
+  padding: 0 2px 4px 37px;
+
+  .md-field {
+    margin: 0;
+  }
+}
+.md-layout.md-gutter {
+  margin: 0;
+}
+
+.body-mobile-view {
+  display: none;
+}
+.md-checkbox .md-checkbox-container:after {
+  width: 6px;
+  height: 13px;
+  top: 0;
+  left: 5px;
+  z-index: 7;
+  opacity: 1;
+  transform: rotate(45deg) scale3D(0.15, 0.15, 1);
+}
+
+@media screen and (max-width: 960px) {
+  .body-mobile-view {
+    display: block;
+  }
+  .filter {
+    margin-top: 20px;
+  }
+}

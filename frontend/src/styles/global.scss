@@ -1,0 +1,55 @@
+@import "~vue-material/dist/theme/engine";
+
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+
+@include md-register-theme(
+  "default",
+  (
+    primary: black,
+    // The primary color of your application
+      accent: md-get-palette-color(red, A200),
+    // The accent or secondary color
+      theme: light
+  )
+);
+
+@import "~vue-material/dist/theme/all"; // Apply the theme
+
+// Basics
+@import "basics/_typography.scss";
+@import "basics/_helpers.scss";
+@import "basics/_layout.scss";
+@import "basics/_base.scss";
+// @import 'basics/links.scss';
+// @import 'basics/buttons.scss';
+// @import 'basics/form.scss';
+
+// Cmps
+@import "components/_app-footer.scss";
+@import "components/_about-user.scss";
+@import "components/_app-chat.scss";
+@import "components/_app-map.scss";
+@import "components/_app-nav.scss";
+@import "components/_home-body.scss";
+@import "components/_home-hero.scss";
+@import "components/_lesson-form.scss";
+@import "components/_lesson-list.scss";
+@import "components/_lesson-preview.scss";
+@import "components/_trainer-reviews.scss";
+@import "components/_user-calendar.scss";
+@import "components/_user-preview.scss";
+@import "components/_users-list.scss";
+@import "components/_type-filter.scss";
+@import "components/_app-footer.scss";
+
+// Views
+@import "views/app.scss";
+@import "views/_home.scss";
+@import "views/_lesson-details.scss";
+@import "views/_login.scss";
+@import "views/_signup.scss";
+@import "views/_user-details.scss";
+@import "views/_user-page.scss";

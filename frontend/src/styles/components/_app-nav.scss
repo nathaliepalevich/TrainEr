@@ -1,0 +1,93 @@
+.bm-menu {
+  padding-top: 0 !important;
+  background-color: white !important;
+  z-index: 10000 !important;
+  .fa {
+    margin-right: 16px;
+    color: black !important;
+  }
+  .divider {
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+  .menu-container {
+    nav ul {
+      li {
+        a {
+          font-size: rem(18px);
+          width: 100%;
+        }
+        h2 {
+          line-height: 30px;
+        }
+      }
+    }
+    .list-item {
+      margin: 10px;
+      padding: 10px;
+      a {
+        color: $clr1 !important;
+        display: inline-block;
+        &:active {
+          color: black !important;
+        }
+      }
+      &:hover {
+        color: black !important;
+        background-color: #96969659;
+      }
+    }
+    .logout {
+      border: none;
+      background: transparent;
+      font-size: rem(18px);
+      padding: 0;
+      color: $clr1;
+    }
+  }
+}
+
+.bm-cross-button .bm-cross {
+  background: $clr1;
+}
+
+.bm-burger-button {
+  z-index: 1000;
+  height: 20px !important;
+  width: 26px !important;
+  left: 20px !important;
+  top: 23px !important;
+  position: fixed !important;
+  .line-style {
+    background-color: $clr1 !important;
+  }
+}
+.bm-item-list {
+  color: $clr1 !important;
+  margin-left: 0 !important;
+}
+
+.header-bless {
+  margin-left: 45px;
+  img {
+    cursor: pointer;
+  }
+  h2 {
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: rem(564px)) {
+    .bm-burger-button {
+      width: rem(22px) !important;
+      height: rem(22px) !important;
+      left: rem(22px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: rem(490px)) {
+  .header-bless {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}

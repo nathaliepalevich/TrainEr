@@ -1,0 +1,17 @@
+.users-list {
+  .md-card.md-theme-default {
+    background-color: transparent;
+  }
+  .swiper-inner {
+    height: 400px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+  }
+  .md-card {
+    box-shadow: none;
+  }
+}

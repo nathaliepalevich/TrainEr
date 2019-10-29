@@ -1,0 +1,26 @@
+.user-details {
+  top: 64px;
+  .user-header {
+    flex-wrap: wrap-reverse;
+  }
+  .active {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+  }
+  .md-avatar {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: rem(400px)) {
+  .user-details {
+    .user-header {
+      button {
+        min-width: 45px;
+        height: 36px;
+        margin: 2px 0px;
+        font-size: rem(14px);
+      }
+    }
+  }
+}

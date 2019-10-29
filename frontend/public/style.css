@@ -1,0 +1,17 @@
+button {
+     cursor: pointer;
+}
+
+ul {
+     list-style-type: none;
+}
+
+a {
+     text-decoration: none !important;
+}
+
+li .router-link-active {
+     font-weight: bolder;
+     text-decoration: underline !important;
+     color: black !important;
+}

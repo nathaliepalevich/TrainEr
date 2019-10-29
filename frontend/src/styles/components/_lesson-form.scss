@@ -1,0 +1,34 @@
+.lesson-form {
+  padding: 30px;
+  position: absolute;
+  top: 65px;
+  form {
+    min-width: 237px;
+    .md-card-content {
+      width: 70%;
+    }
+    .md-button-content {
+      font-size: 10px !important;
+    }
+  }
+  input {
+    display: inline-block;
+  }
+  .md-card {
+    min-width: 340px;
+    padding: 5px;
+  }
+}
+
+.vdatetime-input {
+  max-width: 280px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .vdatetime + div {
+    flex-wrap: wrap;
+  }
+}

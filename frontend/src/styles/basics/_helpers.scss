@@ -1,0 +1,97 @@
+// Font Sizes
+
+.fs12 {
+  font-size: rem(12px);
+}
+.fs14 {
+  font-size: rem(14px);
+}
+.fs17 {
+  font-size: rem(17px);
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.precent-width-100 {
+  width: 100%;
+}
+
+.display-none {
+  display: none;
+}
+
+.clean-list {
+  list-style: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.both-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.desabledBtn {
+  cursor: not-allowed;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.padding-20-20-px {
+  padding: 20px 20px;
+}
+
+.underLine {
+  text-decoration: underline;
+}
