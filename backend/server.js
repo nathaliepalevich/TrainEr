@@ -18,11 +18,12 @@ const cloudinaryConfig = require('./config.json').cloudinary
 cloudinary.config(cloudinaryConfig)
 
 
-
+if (process.env.NODE_ENV !== "production") {
 app.use(cors({
     origin: ['http://localhost:8080', 'http://localhost:8081', 'http://localhost:8082','http://localhost:8086'],
     credentials: true
 }));
+}
 // 
 // app.use(cookieParser())
 app.use(bodyParser.json())
