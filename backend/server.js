@@ -9,6 +9,7 @@ const session = require('express-session')
 const port = process.env.PORT || 3000;
 const multer = require('multer')
 const cloudinary = require('cloudinary').v2;
+console.log('port', port);
 
 const SocketService = require('./services/socketService.js')
 
@@ -17,8 +18,7 @@ const cloudinaryConfig = require('./config.json').cloudinary
 cloudinary.config(cloudinaryConfig)
 
 
-// serve stastic files from public to heroku
-app.use(express.static('public'))
+
 app.use(cors({
     origin: ['http://localhost:8080', 'http://localhost:8081', 'http://localhost:8082','http://localhost:8086'],
     credentials: true
@@ -52,7 +52,14 @@ app.use('/api/filter', filterRoutes)
 
 SocketService.setup(http);
 
+// // serve stastic files from public to heroku
+// app.use(express.static('public'))
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'public')));
+  }
+
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+http.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
