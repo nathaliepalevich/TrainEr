@@ -1,0 +1,19 @@
+{
+  "name": "nathalie-trainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathaliepalevich/TrainEr.git"
+  },
+  "author": "Nathalie Palevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathaliepalevich/TrainEr/issues"
+  },
+  "homepage": "https://github.com/nathaliepalevich/TrainEr#readme"
+}
