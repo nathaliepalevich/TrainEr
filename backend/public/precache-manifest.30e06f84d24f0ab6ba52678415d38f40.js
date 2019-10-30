@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/fonts/Lato-Bold.85d339d9.ttf"
   },
   {
-    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
-    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
-  },
-  {
     "revision": "2d36b1a925432bae7f3c53a340868c6e",
     "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
+  },
+  {
+    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
+    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
     "revision": "40e5bad284d6109056e4",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/fonts/HeptaSlab-VariableFont_wght.a13d86da.ttf"
   },
   {
-    "revision": "f2c95ab15bbd7581b664402f6cd9f354",
+    "revision": "3d363d4e242b4cd2afa7868d57f65208",
     "url": "/index.html"
   },
   {
