@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "5d7700995b9ebda587092d3e51b9f22d",
-    "url": "/img/trainer-mobile-bg-xs.5d770099.jpg"
+    "revision": "6ccb9eb89a48d3f3b6e8d3d0e5e207aa",
+    "url": "/fonts/Limelight-Regular.6ccb9eb8.ttf"
   },
   {
     "revision": "547e5b45a30015596a49c283f0fa7f1a",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.d8d88180.js"
   },
   {
-    "revision": "f2c95ab15bbd7581b664402f6cd9f354",
+    "revision": "f960a4b805de973bc54549892aa0c21a",
     "url": "/index.html"
   },
   {
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/js/app.e5786f26.js"
   },
   {
-    "revision": "b02046ea5d95923dac12259900739f6b",
-    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
+    "revision": "5d7700995b9ebda587092d3e51b9f22d",
+    "url": "/img/trainer-mobile-bg-xs.5d770099.jpg"
   },
   {
-    "revision": "6ccb9eb89a48d3f3b6e8d3d0e5e207aa",
-    "url": "/fonts/Limelight-Regular.6ccb9eb8.ttf"
+    "revision": "b02046ea5d95923dac12259900739f6b",
+    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
   },
   {
     "revision": "2d36b1a925432bae7f3c53a340868c6e",
