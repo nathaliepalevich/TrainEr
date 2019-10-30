@@ -18,30 +18,30 @@ const BASE_URL = process.env.NODE_ENV === 'production'
 async function query(filterBy) {
      let filterArr = [...filterBy]
      if(!filterArr.length) filterArr = 'filterArr'
-     const { data } = await axios.get(`http:${BASE_URL}/api/lesson/getLessons/${filterArr}`)
+     const { data } = await axios.get(`${BASE_URL}/api/lesson/getLessons/${filterArr}`)
      return data
 }
 
 async function getLessonById(lessonId) {  
-     const { data } = await axios.get(`http:${BASE_URL}/api/lesson/${lessonId}`)  
+     const { data } = await axios.get(`${BASE_URL}/api/lesson/${lessonId}`)  
      return data
 }
 
 async function addUserToLesson(lessonId, user){
-     const { data } = await axios.post(`http:${BASE_URL}/api/lesson/addUserToLesson/`, {lessonId, user})
+     const { data } = await axios.post(`${BASE_URL}/api/lesson/addUserToLesson/`, {lessonId, user})
      return data  
 }
 async function removeUserFromLesson(lessonId, user){
-     const { data } = await axios.post(`http:${BASE_URL}/api/lesson/removeUserFromLesson/`, {lessonId, user})
+     const { data } = await axios.post(`${BASE_URL}/api/lesson/removeUserFromLesson/`, {lessonId, user})
      return data  
 }
 async function getLessonsByUser(userId){
-     const { data } = await axios.post(`http:${BASE_URL}/api/lesson/getLessonsByUser`, {userId})
+     const { data } = await axios.post(`${BASE_URL}/api/lesson/getLessonsByUser`, {userId})
      return data
      
 }
 async function getLessonsByTrainer(userId){
-     const { data } = await axios.post(`http:${BASE_URL}/api/lesson/getLessonsByTrainer`, {userId})
+     const { data } = await axios.post(`${BASE_URL}/api/lesson/getLessonsByTrainer`, {userId})
      return data
 }
 
