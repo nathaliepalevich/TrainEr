@@ -6,10 +6,9 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 const session = require('express-session')
-const port = process.env.PORT || 3000;
+
 const multer = require('multer')
 const cloudinary = require('cloudinary').v2;
-console.log('port', port);
 
 const SocketService = require('./services/socketService.js')
 
@@ -62,5 +61,6 @@ if (process.env.NODE_ENV === 'production') {
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
+const port = process.env.PORT || 3000;
 http.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
