@@ -16,7 +16,7 @@
   "scripts": {
     "server:dev": "NODE_ENV=development nodemon app.js",
     "server:prod": "node app.js",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC"
