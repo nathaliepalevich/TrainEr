@@ -1,12 +1,11 @@
 const express = require('express')
 const app = express()
 const http = require('http').createServer(app);
-
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 const session = require('express-session')
-
+const cookieParser = require('cookie-parser')
 const multer = require('multer')
 const cloudinary = require('cloudinary').v2;
 
@@ -23,9 +22,8 @@ app.use(cors({
     credentials: true
 }));
 }
-// 
-// app.use(cookieParser())
 app.use(bodyParser.json())
+app.use(cookieParser());
 app.use(session({
     secret: 'puki muki',
     resave: false,
@@ -59,8 +57,8 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, 'public')));
   }
 
-app.get('/', (req, res) => res.send('Hello World!'))
+  const port = process.env.PORT || 3000;
+app.get('/', (req, res) => res.send('Hello World!' + port))
 
-const port = process.env.PORT || 3000;
 http.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
