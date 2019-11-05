@@ -20,7 +20,5 @@
     "url": "https://github.com/nathaliepalevich/TrainEr/issues"
   },
   "homepage": "https://github.com/nathaliepalevich/TrainEr#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "dependencies": {}
 }
