@@ -16,7 +16,7 @@
     "socket.io": "^2.3.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "server:dev": "NODE_ENV=development nodemon app.js",
     "server:prod": "node app.js"
   },
