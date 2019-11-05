@@ -16,10 +16,13 @@
     "socket.io": "^2.3.0"
   },
   "scripts": {
+    "start": "node server.js",
     "server:dev": "NODE_ENV=development nodemon app.js",
-    "server:prod": "node app.js",
-    "start": "node server.js"
+    "server:prod": "node app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "10.16.0"
+  }
 }
