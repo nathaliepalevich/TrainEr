@@ -108,7 +108,7 @@ export default {
       const form = new FormData();
       form.append("imgUpload", ev.target.files[0]);
       const res = await axios.post(
-        `http:${SocketService.BASE_URL}/upload/cloudinary`,
+        `${SocketService.BASE_URL}/upload/cloudinary`,
         form
       );
       this.signupCred.userImg = await res.data.secure_url;
