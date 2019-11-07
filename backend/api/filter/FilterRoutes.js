@@ -1,5 +1,5 @@
 const express = require('express')
-const { getfilter } = require('./filterController')
+const { getfilter } = require('./FilterController')
 const router = express.Router()
 
 

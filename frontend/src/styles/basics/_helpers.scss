@@ -95,3 +95,19 @@
 .underLine {
   text-decoration: underline;
 }
+
+.list-item {
+  margin: 10px;
+  padding: 10px;
+  a {
+    color: $clr1 !important;
+    display: inline-block;
+    &:active {
+      color: black !important;
+    }
+  }
+  &:hover {
+    color: black !important;
+    background-color: #96969659;
+  }
+}

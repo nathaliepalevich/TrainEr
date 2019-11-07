@@ -7,6 +7,8 @@ import SignUp from './views/SignUp.vue'
 import Login from './views/LogIn.vue'
 import Users from './views/UsersPage.vue'
 import LessonForm from './components/LessonForm.vue'
+import TrainerGuide from './components/TrainerGuide.vue'
+import TraineeGuide from './components/TraineeGuide.vue'
 import AppGuide from './views/AppGuide.vue'
 // import AboutUser from './views/AboutUser.vue'
 Vue.use(Router)
@@ -21,7 +23,19 @@ export default new Router({
     {
       path: '/app-guide',
       name: 'appGuide',
-      component: AppGuide
+      component: AppGuide,
+      children: [
+        {
+          path: '/trainer-guide',
+          name: 'TrainerGuide',
+          component: TrainerGuide,
+        },
+        {
+          path: '/trainee-guide',
+          name: 'TraineeGuide',
+          component: TraineeGuide,
+        }
+      ]
     },
     {
       path: '/lesson/:id',
