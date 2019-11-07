@@ -41,7 +41,7 @@ app.post('/upload/cloudinary', upload.single('imgUpload'), (req, res) => {
 const authRoutes = require('./api/auth/AuthRoutes')
 const userRoute = require('./api/user/UserRoutes')
 const lessonRoute = require('./api/lesson/LessonRoutes')
-const filterRoutes = require('./api/filter/filterRoutes')
+const filterRoutes = require('./api/filter/FilterRoutes')
 
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoute)
