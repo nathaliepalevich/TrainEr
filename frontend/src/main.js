@@ -8,7 +8,6 @@ import Datetime from 'vue-datetime'
 import 'vue-datetime/dist/vue-datetime.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueMaterial from 'vue-material'
-// import * as VueGoogleMaps from 'vue2-google-maps';
 
 
 import {
@@ -20,12 +19,6 @@ Settings.defaultLocale = 'he'
 var VueScrollTo = require('vue-scrollto');
 
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
-// Vue.use(VueGoogleMaps, {
-//   load: {
-//     key: 'AIzaSyBbf-OSd3gYrA2hOp7KFsRK4FxE4R6RCKI',
-//     libraries: 'places'
-//   }
-// });
 Vue.use(require('vue-moment'));
 Vue.use(VueMaterial)
 Vue.use(Datetime)

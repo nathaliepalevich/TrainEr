@@ -52,13 +52,6 @@ export default new Router({
       path: '/user-details/:id',
       name: 'userDetails',
       component: UserDetails ,
-    //   children: [
-    //     {
-    //       path: "about-user",
-    //       name: "about-user",
-    //       component: AboutUser
-    //   }
-    // ]
     },
     {
       path: '/sign-up',

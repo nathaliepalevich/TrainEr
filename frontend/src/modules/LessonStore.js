@@ -46,64 +46,44 @@ export default {
 
      },
      actions: {
-          getLessons(context, { filterBy=[] }) {
-               return LessonService.query(filterBy)
-               .then(lessons => {
-                         context.commit({ type: 'setLessons', lessons: lessons })
+          async  getLessons(context, { filterBy=[] }) {
+               const lessons = await LessonService.query(filterBy)
+                         context.commit({ type: 'setLessons', lessons })
                          return lessons
-                    })
           },
-          getLessonById(context, { lessonId }) {
-               return LessonService.getLessonById(lessonId)
-                    .then(lesson => {
-                         // context.commit({ type: 'setLesson', lesson })
-                         return lesson;
-                    })
+          async   getLessonById(context, { lessonId }) {
+               return await LessonService.getLessonById(lessonId)
           },
-          saveLesson(context, { editLesson }) {
+          async saveLesson(context, { editLesson }) {
                const currCommit = (editLesson._id) ? 'editLesson' : 'addLesson'
-               return LessonService.saveLesson(editLesson)
-                    .then(updatedLesson => {
+               const updatedLesson = await  LessonService.saveLesson(editLesson)
                          context.commit({ type: currCommit, updatedLesson })
                          return updatedLesson
-                    })
           },
-          deleteLesson(context, { deleteLesson }) {
-               return LessonService.deleteLesson(deleteLesson)
-                    .then(_ => {
-                      return   LessonService.query([])
-                              .then(lessons => {
+          async deleteLesson(context, { deleteLesson }) {
+               await LessonService.deleteLesson(deleteLesson)
+                      const lessons = await  LessonService.query([])
                                    context.commit({ type: 'setLessons', lessons })
-                              })
-                    })
           },
-          addUserToLesson(context, { lessonId }) {
+          async  addUserToLesson(context, { lessonId }) {
                const user = UserStore.state.user
-               return LessonService.addUserToLesson(lessonId, user)
-                    .then(updatedLesson => {
+               const updatedLesson = await  LessonService.addUserToLesson(lessonId, user)
                          context.commit({ type: 'editLesson', updatedLesson })
                          return updatedLesson
-                    })
           },
-          removeUserFromLesson(context, { lessonId }) {
+          async  removeUserFromLesson(context, { lessonId }) {
                const user = UserStore.state.user
-               return LessonService.removeUserFromLesson(lessonId, user)
-                    .then(updatedLesson => {
+               const updatedLesson = await LessonService.removeUserFromLesson(lessonId, user)
                          context.commit({ type: 'editLesson', updatedLesson })
                          return updatedLesson
-                    })
           },
-          getLessonsByUser(context, { profilesUserId }) {
-               return LessonService.getLessonsByUser(profilesUserId)
-                    .then(lessonsByUser => {
-                         return lessonsByUser
-                    })
+          async getLessonsByUser(context, { profilesUserId }) {
+               return await LessonService.getLessonsByUser(profilesUserId)
+              
           },
-          getLessonsByTrainer(context, { profilesUserId }) {
-               return LessonService.getLessonsByTrainer(profilesUserId)
-                    .then(lessonsByTrainer => {
-                         return lessonsByTrainer
-                    })
+          async getLessonsByTrainer(context, { profilesUserId }) {
+               return await LessonService.getLessonsByTrainer(profilesUserId)
+                         
           },
      }
 }

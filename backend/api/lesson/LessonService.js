@@ -17,7 +17,6 @@ async function query(filterBy = []) {
                 lessons = await collection.find({"dateTime" : { $gte : new Date()}}).toArray();
           }
           else {
-               //, {"title":  {...values}
                lessons = await collection.find({$and:[{ "trainTypes": { $in: values}},{ "dateTime" : { $gte : new Date()}}]}).toArray();
           }
           
@@ -64,18 +63,6 @@ async function updateLesson(lesson) {
           throw (err)
      }
 }
-
-// async function addMsgsToLesson(lessonId){
-//      const collection = await dbService.getCollection('lesson')
-//      try {
-//           let lessonId = new ObjectId(lesson._id)
-//           delete lesson._id;  
-//           await collection.updateOne({ "_id": lessonId }, { $set: lesson })
-//           return await collection.findOne({ "_id": ObjectId(lessonId)});
-//      } catch {
-
-//      }
-// }
 
 async function addNewLesson(lesson) {
      lesson.dateTime = new Date(lesson.dateTime)

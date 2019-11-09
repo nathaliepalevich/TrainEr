@@ -15,7 +15,7 @@
             {{regBtn}}
             <span class="shiny"></span>
           </button>
-          <router-link v-if="isLessonCreator " :to="{ name: `EditLesson`,params: lesson}">
+          <router-link v-if="isLessonCreator && !timePassed " :to="{ name: `EditLesson`,params: lesson}">
             <button class="regBtn position-relative">
               Edit Lesson
               <span class="shiny"></span>
