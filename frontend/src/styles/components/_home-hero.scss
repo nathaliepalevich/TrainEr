@@ -37,7 +37,7 @@
 
   #more-arrows {
     width: rem(100px);
-    height: rem(80px);
+    height: rem(90px);
     &:hover {
       polygon {
         fill: $clr3;
@@ -110,7 +110,7 @@
         width: 100%;
         bottom: 3rem;
         .mobile-txt {
-          height: 35%;
+          height: 40%;
           justify-content: start;
           align-items: center;
         }

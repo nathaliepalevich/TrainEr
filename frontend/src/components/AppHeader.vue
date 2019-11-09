@@ -16,14 +16,17 @@ export default {
 </script>
 
 <style lang="scss">
-.md-toolbar {
-  position: fixed !important;
-  height: 50px;
-  z-index: 100 !important;
+#page-wrap {
+  .md-toolbar {
+    position: fixed !important;
+    height: 35px !important;
+    z-index: 100 !important;
+  }
 }
-.header-bless {
-  img {
-    max-width: 150px;
+@media (max-width: 960px) {
+  .md-toolbar,
+  .md-toolbar-row {
+    min-height: 40px !important;
   }
 }
 </style>

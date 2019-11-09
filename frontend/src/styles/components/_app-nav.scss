@@ -40,8 +40,8 @@
   z-index: 1000;
   height: 20px !important;
   width: 26px !important;
-  left: 20px !important;
-  top: 23px !important;
+  left: 15px !important;
+  top: 20px !important;
   position: fixed !important;
   .line-style {
     background-color: $clr1 !important;
@@ -55,23 +55,30 @@
 .header-bless {
   margin-left: 45px;
   img {
+    max-width: 100px;
     cursor: pointer;
   }
   h2 {
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  @media screen and (max-width: rem(564px)) {
-    .bm-burger-button {
-      width: rem(22px) !important;
-      height: rem(22px) !important;
-      left: rem(22px) !important;
-    }
+}
+@media screen and (max-width: rem(564px)) {
+  .bm-burger-button {
+    height: 16px !important;
+    width: 20px !important;
+    left: 15px !important;
+    top: 20px !important;
   }
 }
 
-@media screen and (max-width: rem(490px)) {
+@media screen and (max-width: rem(414px)) {
+  .bm-burger-button {
+    left: 10px !important;
+    top: 10px !important;
+  }
   .header-bless {
+    margin-left: 30px;
     h2 {
       font-size: 1rem;
     }
