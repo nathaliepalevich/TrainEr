@@ -11,7 +11,7 @@ Vue, Vuex, Sass, Node.js, MongoDB, google maps
 Using libraries such as:
 sweetalert, vue-awesome-swiper, vue-cal, vue-datetime, vue-material, vue-moment, vue-scrollto, vue-star-rating
 
-# live demo
+# Live demo
 
 https://train-er.herokuapp.com
 
