@@ -1,7 +1,7 @@
 <template >
   <swiper-slide>
     <div>
-      <router-link :to="`/user-details/${this.userId}`">
+      <router-link :to="`/user-details/${this.currUser._id}`">
         <md-card>
           <md-card-media class="users-page">
             <img :src="userImg" alt="lessonImg" />
@@ -14,13 +14,7 @@
 </template>
 
 <script>
-import global from "@/styles/components/_user-preview.scss";
 export default {
-  data() {
-    return {
-      userId: this.currUser._id
-    };
-  },
   props: {
     currUser: {
       type: Object

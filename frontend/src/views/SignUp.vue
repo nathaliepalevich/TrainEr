@@ -116,7 +116,7 @@ export default {
     },
     async signup() {
       if (!this.signupCred.userImg){
-        this.signupCred.userImg = require("../assets/user_icon.png");
+        this.signupCred.userImg = require("../assets/images/user_icon.png");
 
       }
 

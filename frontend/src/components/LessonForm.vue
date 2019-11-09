@@ -182,9 +182,9 @@ export default {
     async addLesson() {
       if (!this.lesson._id) {
         this.newLesson.trainTypes.push();
-        this.newLesson.createdBy.trainerId = currUser._id;
-        this.newLesson.createdBy.trainerImg = currUser.userImg;
-        this.newLesson.createdBy.fullName = currUser.fullName;
+        this.newLesson.createdBy.trainerId = this.currUser._id;
+        this.newLesson.createdBy.trainerImg = this.currUser.userImg;
+        this.newLesson.createdBy.fullName = this.currUser.fullName;
       }
 
       this.parseDate();

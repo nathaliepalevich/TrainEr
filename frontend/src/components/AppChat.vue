@@ -104,7 +104,7 @@ export default {
     this.msgFrom = this.loggedUser ? this.loggedUser.fullName : "Unknown user";
     this.msgFromImg = this.loggedUser
       ? this.loggedUser.userImg
-      : "../assets/user_icon.png";
+      : "../assets/images/user_icon.png";
 
     this.msgs = this.lesson.msgs;
     socket.emit("chat join", {
