@@ -19,7 +19,7 @@ export default {
 #page-wrap {
   .md-toolbar {
     position: fixed !important;
-    height: 35px !important;
+    min-height: 40px !important;
     z-index: 100 !important;
   }
 }
