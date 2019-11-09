@@ -74,7 +74,7 @@
         <hr class="underline" />
         <div class="flex start align-baseline">
           <div class="flex align-baseline">
-            <h2>Registerd trainees</h2>
+            <h2>Registered trainees</h2>
             <div class="reg-trainee">
               <md-avatar
                 class="md-medium"
