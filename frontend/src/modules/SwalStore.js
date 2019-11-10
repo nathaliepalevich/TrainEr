@@ -1,17 +1,6 @@
 import SwalService from '../services/SwalService.js'
 
 export default {
-//      state: {
-// alertMsg: null
-//      },
-//      getters: {
-//           alertMsg(state) { return state.alertMsg },
-//      },
-//      mutations: {
-//           setAlertMsg(state, { alertToShow }) {
-//                state.alertMsg = alertToShow
-//           }
-//      },
      actions: {
         async  notRegAlert(context, {msg}) {
              const alertToShow = await SwalService.notRegAlert(msg)

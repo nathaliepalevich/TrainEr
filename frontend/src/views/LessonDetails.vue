@@ -11,6 +11,7 @@
             class="regBtn position-relative"
             :class="{desabledBtn: desableBtn}"
             :disabled="desableBtn"
+            :value="regBtn"
           >
             {{regBtn}}
             <span class="shiny"></span>
@@ -188,7 +189,7 @@ export default {
         params: this.lesson
       });
     },
-    async addUserToLesson(ev) {
+    async addUserToLesson() {
       if (!this.loggedUser) {
         const userRes = await this.$store.dispatch({
           type: "notRegAlert",
@@ -197,8 +198,7 @@ export default {
         if (userRes) this.$router.push("../login");
         return;
       }
-
-      const innerBtnTxt = ev.path[0].innerText;
+      const innerBtnTxt = this.regBtn;
       let answer;
       if (innerBtnTxt === "Unsubscribe") {
         answer = await this.$store.dispatch({
