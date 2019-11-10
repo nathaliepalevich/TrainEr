@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "b02046ea5d95923dac12259900739f6b",
-    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
+    "revision": "f04ca116c6a8428796213da3aee2f29e",
+    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
   },
   {
     "revision": "d2e5d1b5ce5a249906667e040a7e8837",
@@ -24,32 +24,32 @@ self.__precacheManifest = [
     "url": "/img/logo.547e5b45.png"
   },
   {
-    "revision": "85d339d916479f729938d2911b85bf1f",
-    "url": "/fonts/Lato-Bold.85d339d9.ttf"
-  },
-  {
     "revision": "26a16f98f49899b888a573d7f86d0f4e",
     "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
   },
   {
-    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
-    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
+    "revision": "85d339d916479f729938d2911b85bf1f",
+    "url": "/fonts/Lato-Bold.85d339d9.ttf"
   },
   {
     "revision": "2d36b1a925432bae7f3c53a340868c6e",
     "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
   },
   {
-    "revision": "c59e8c7b9b63bc248c90",
-    "url": "/js/app.bb8f6756.js"
+    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
+    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
+  },
+  {
+    "revision": "334ce518536d6fa5d6de",
+    "url": "/js/app.c456161e.js"
   },
   {
     "revision": "531d9b49e140a7381711",
     "url": "/js/chunk-vendors.d8d88180.js"
   },
   {
-    "revision": "f04ca116c6a8428796213da3aee2f29e",
-    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
+    "revision": "b02046ea5d95923dac12259900739f6b",
+    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
   },
   {
     "revision": "5d7700995b9ebda587092d3e51b9f22d",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/fonts/HeptaSlab-VariableFont_wght.a13d86da.ttf"
   },
   {
-    "revision": "b867563b17d2073c08ca0812fa6275d4",
+    "revision": "1c9aa110bf0626a254b113a51238943a",
     "url": "/index.html"
   },
   {
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "c59e8c7b9b63bc248c90",
+    "revision": "334ce518536d6fa5d6de",
     "url": "/css/app.5ccf4687.css"
   }
 ];
