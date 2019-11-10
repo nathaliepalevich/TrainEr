@@ -29,11 +29,11 @@
                 <md-textarea type="text-box" v-model="signupCred.aboutMe"></md-textarea>
               </md-content>
             </md-field>
-            <div >
-              <md-checkbox v-if="signupUser"
+            <div>
+              <md-checkbox
+                v-if="signupUser"
                 v-model="signupCred.isTrainer"
                 name="trainer"
-                value="trainer"
                 class="md-primary"
               >Are you a trainer</md-checkbox>
               <md-field>
@@ -41,7 +41,6 @@
                 <md-file type="file" @change="handleUploadImage($event)" accept="image/*" />
               </md-field>
             </div>
-        
           </div>
         </div>
         <div class="btn-register">
@@ -51,13 +50,13 @@
             :disabled="isUploading"
             class="md-raised"
           >{{regEdit}}</md-button>
-          <md-button @click="cancelChange"  class="md-raised">Cancel</md-button>
+          <md-button @click="cancelChange" class="md-raised">Cancel</md-button>
         </div>
       </div>
     </form>
-      <div :class="{none: !isUploading }" class="loading-spinner">
-          <md-progress-spinner class="md-accent" :md-stroke="3" md-mode="indeterminate"></md-progress-spinner>
-      </div>
+    <div :class="{none: !isUploading }" class="loading-spinner">
+      <md-progress-spinner class="md-accent" :md-stroke="3" md-mode="indeterminate"></md-progress-spinner>
+    </div>
   </section>
 </template>
 
@@ -66,7 +65,7 @@ import UserService from "../services/UserService";
 
 import Swal from "sweetalert2";
 import axios from "axios";
-import SocketService from '../services/SocketService.js'
+import SocketService from "../services/SocketService.js";
 
 export default {
   name: "signup",
@@ -83,7 +82,7 @@ export default {
         isTrainer: false,
         aboutMe: "",
         reviews: [],
-        rating: [],
+        rating: []
       },
       signupUser: true,
       addEdit: "Signup Form",
@@ -115,16 +114,16 @@ export default {
       this.isUploading = false;
     },
     async signup() {
-      if (!this.signupCred.userImg){
+      if (!this.signupCred.userImg) {
         this.signupCred.userImg = require("../assets/images/user_icon.png");
-
       }
+      console.log("signupCred.isTrainer", this.signupCred.isTrainer);
 
       let user = await this.$store.dispatch({
         type: "saveUser",
         editUser: this.signupCred
       });
-         this.$router.push(`/user-details/${user._id}`);
+      this.$router.push(`/user-details/${user._id}`);
       Swal.fire({
         title: "CONGRATS!",
         text: "You are now officially a PRO TRAIN-ER member!",
