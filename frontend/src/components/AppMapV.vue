@@ -23,7 +23,6 @@ export default {
     };
   },
   methods: {
-
     async renderLessonsOnMap() {
       this.google = await gmapsInit();
       var geocoder = new google.maps.Geocoder();
@@ -40,14 +39,16 @@ export default {
                 lat: results[0].geometry.location.lat(),
                 lng: results[0].geometry.location.lng()
               };
-        this.google.maps.event.addListener(this.map, "click", event => {
-                infowindow.close();
-              });
+
               marker = new google.maps.Marker({
                 map: this.map,
                 position: results[0].geometry.location,
                 title: lesson.title,
-                icon: "http://maps.google.com/mapfiles/kml/pal3/icon28.png",
+                icon: "http://maps.google.com/mapfiles/kml/pal3/icon28.png"
+              });
+
+              this.google.maps.event.addListener(this.map, "click", event => {
+                infowindow.close();
               });
               const contentString = `
             <div  class="popup" >
@@ -66,13 +67,11 @@ export default {
                 content: contentString
               });
               marker.addListener("click", () => {
-                    
                 infowindow.open(this.map, marker);
                 this.currWindow = marker;
                 EventBus.$emit("LESSON_MARK", lesson);
               });
 
-             
               this.markers.push(marker);
             } else {
               console.log(
@@ -92,14 +91,14 @@ export default {
 
   async created() {
     await this.renderLessonsOnMap();
-    // this.map; //= new google.maps.Map(this.$el);
+    this.map = new google.maps.Map(this.$el);
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(pos => {
         const latLng = { lat: pos.coords.latitude, lng: pos.coords.longitude };
 
         this.map = new google.maps.Map(this.$el, {
-          zoom: 13,
+          zoom: 12,
           center: latLng
         });
         new google.maps.Marker({

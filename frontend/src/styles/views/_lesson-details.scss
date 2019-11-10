@@ -2,7 +2,7 @@
   font-family: "lato-light";
   .lesson-profile {
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
   .lesson-img-container {
@@ -121,7 +121,7 @@
 
 @media screen and (max-width: rem(564px)) {
   .lesson-details {
-    F .lesson-img-container,
+    .lesson-img-container,
     .lesson-container {
       width: 100%;
     }
