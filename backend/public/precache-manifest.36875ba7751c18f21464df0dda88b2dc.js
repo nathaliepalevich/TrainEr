@@ -24,20 +24,20 @@ self.__precacheManifest = [
     "url": "/img/logo.547e5b45.png"
   },
   {
-    "revision": "85d339d916479f729938d2911b85bf1f",
-    "url": "/fonts/Lato-Bold.85d339d9.ttf"
-  },
-  {
-    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
-    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
-  },
-  {
     "revision": "26a16f98f49899b888a573d7f86d0f4e",
     "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
   },
   {
+    "revision": "85d339d916479f729938d2911b85bf1f",
+    "url": "/fonts/Lato-Bold.85d339d9.ttf"
+  },
+  {
     "revision": "2d36b1a925432bae7f3c53a340868c6e",
     "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
+  },
+  {
+    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
+    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
     "revision": "477fd4f7ba83ac71af6e",
