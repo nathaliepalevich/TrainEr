@@ -1,4 +1,4 @@
-# final_project
+# train-er
 
 ## Project setup
 ```

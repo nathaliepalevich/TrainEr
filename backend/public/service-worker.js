@@ -17,7 +17,7 @@ importScripts(
   "/precache-manifest.36875ba7751c18f21464df0dda88b2dc.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "final_project"});
+workbox.core.setCacheNameDetails({prefix: "train-er"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
