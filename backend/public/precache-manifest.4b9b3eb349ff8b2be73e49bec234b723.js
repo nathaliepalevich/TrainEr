@@ -24,36 +24,36 @@ self.__precacheManifest = [
     "url": "/img/logo.547e5b45.png"
   },
   {
-    "revision": "26a16f98f49899b888a573d7f86d0f4e",
-    "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
-  },
-  {
     "revision": "85d339d916479f729938d2911b85bf1f",
     "url": "/fonts/Lato-Bold.85d339d9.ttf"
-  },
-  {
-    "revision": "2d36b1a925432bae7f3c53a340868c6e",
-    "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
   },
   {
     "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
     "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
-    "revision": "334ce518536d6fa5d6de",
-    "url": "/js/app.c456161e.js"
+    "revision": "26a16f98f49899b888a573d7f86d0f4e",
+    "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
+  },
+  {
+    "revision": "2d36b1a925432bae7f3c53a340868c6e",
+    "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
+  },
+  {
+    "revision": "477fd4f7ba83ac71af6e",
+    "url": "/js/app.3456b54f.js"
   },
   {
     "revision": "531d9b49e140a7381711",
     "url": "/js/chunk-vendors.d8d88180.js"
   },
   {
-    "revision": "b02046ea5d95923dac12259900739f6b",
-    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
-  },
-  {
     "revision": "5d7700995b9ebda587092d3e51b9f22d",
     "url": "/img/trainer-mobile-bg-xs.5d770099.jpg"
+  },
+  {
+    "revision": "b02046ea5d95923dac12259900739f6b",
+    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
   },
   {
     "revision": "6c88c50412fd20cdd1908fb98fdadac7",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/fonts/HeptaSlab-VariableFont_wght.a13d86da.ttf"
   },
   {
-    "revision": "1c9aa110bf0626a254b113a51238943a",
+    "revision": "248b20156922a97817b064758945618c",
     "url": "/index.html"
   },
   {
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "334ce518536d6fa5d6de",
-    "url": "/css/app.5ccf4687.css"
+    "revision": "477fd4f7ba83ac71af6e",
+    "url": "/css/app.167f0e9f.css"
   }
 ];
