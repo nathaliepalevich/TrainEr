@@ -70,7 +70,7 @@
     .header-container {
       background-image: url("../assets/images/trainer-mobile-bg-xs.jpg");
       margin-top: 0;
-      background-size: auto 353px;
+      background-size: auto 430px;
       background-position: 51% 15px;
       background-repeat: no-repeat;
       justify-content: center;
@@ -107,9 +107,10 @@
     .header-container {
       margin: 0;
       justify-content: center;
+
       .left-container {
         width: 100%;
-        bottom: 3rem;
+        top: 1rem;
         .mobile-txt {
           height: 40%;
           justify-content: start;
@@ -133,11 +134,18 @@
   .header-hero {
     .header-container {
       justify-content: center;
-      background-size: auto 255px;
-      background-position: top;
+      // background-size: auto 255px;
+      // background-position: top;
+
+      background-size: auto 235px;
+      background-position: 51% 0;
       .left-container {
-        height: 100%;
-        bottom: 5rem;
+        height: 70%;
+        // bottom: 5rem;
+
+        justify-content: flex-end;
+        position: relative;
+        top: 10px;
         .header-txt {
           font-size: 1rem;
         }
