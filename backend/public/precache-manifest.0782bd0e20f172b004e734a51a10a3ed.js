@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "b464889840d2a96a5dc30059d9f4ad9a",
-    "url": "/fonts/DancingScript-Regular.b4648898.ttf"
+    "revision": "f04ca116c6a8428796213da3aee2f29e",
+    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
   },
   {
     "revision": "d2e5d1b5ce5a249906667e040a7e8837",
     "url": "/style.css"
   },
   {
-    "revision": "f04ca116c6a8428796213da3aee2f29e",
-    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
+    "revision": "b464889840d2a96a5dc30059d9f4ad9a",
+    "url": "/fonts/DancingScript-Regular.b4648898.ttf"
   },
   {
     "revision": "531d9b49e140a7381711",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
   },
   {
-    "revision": "9afc148dda39ef8139a07115252dd977",
-    "url": "/fonts/Tangerine-Bold.9afc148d.ttf"
-  },
-  {
     "revision": "ad4cd34327721459c11a67b4332c945e",
     "url": "/fonts/Parisienne-Regular.ad4cd343.ttf"
+  },
+  {
+    "revision": "9afc148dda39ef8139a07115252dd977",
+    "url": "/fonts/Tangerine-Bold.9afc148d.ttf"
   },
   {
     "revision": "85d339d916479f729938d2911b85bf1f",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
-    "revision": "5500afcd51e126dc05fa",
+    "revision": "46c748bf3000fc56389d",
     "url": "/js/app.266410b7.js"
   },
   {
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/fonts/HeptaSlab-VariableFont_wght.a13d86da.ttf"
   },
   {
-    "revision": "cbe1a4e7535e5e620b9ab604c96457fe",
+    "revision": "e577f1372f254c439c7b9d0045cd8944",
     "url": "/index.html"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "5500afcd51e126dc05fa",
-    "url": "/css/app.d118f667.css"
+    "revision": "46c748bf3000fc56389d",
+    "url": "/css/app.c1ae1359.css"
   }
 ];
