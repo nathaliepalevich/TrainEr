@@ -3,12 +3,12 @@
     <div class="header-container flex">
       <div class="left-container flex column justify-center precent-width-100">
         <div class="mobile-txt">
-          <div class="header-txt caps">
-            <h2>
+          <div class="header-txt">
+            <h2 class="caps">
               Your favorite sport
               wherever you are.
             </h2>
-            <h3>No string attached.</h3>
+            <h3>No strings attached.</h3>
           </div>
           <div class="sub-header-txt">
             <h4>
