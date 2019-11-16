@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "f04ca116c6a8428796213da3aee2f29e",
-    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
+    "revision": "b464889840d2a96a5dc30059d9f4ad9a",
+    "url": "/fonts/DancingScript-Regular.b4648898.ttf"
   },
   {
     "revision": "d2e5d1b5ce5a249906667e040a7e8837",
     "url": "/style.css"
   },
   {
-    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
-    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
+    "revision": "f04ca116c6a8428796213da3aee2f29e",
+    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
   },
   {
     "revision": "531d9b49e140a7381711",
@@ -28,6 +28,14 @@ self.__precacheManifest = [
     "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
   },
   {
+    "revision": "9afc148dda39ef8139a07115252dd977",
+    "url": "/fonts/Tangerine-Bold.9afc148d.ttf"
+  },
+  {
+    "revision": "ad4cd34327721459c11a67b4332c945e",
+    "url": "/fonts/Parisienne-Regular.ad4cd343.ttf"
+  },
+  {
     "revision": "85d339d916479f729938d2911b85bf1f",
     "url": "/fonts/Lato-Bold.85d339d9.ttf"
   },
@@ -36,16 +44,20 @@ self.__precacheManifest = [
     "url": "/fonts/Lato-Regular.2d36b1a9.ttf"
   },
   {
-    "revision": "6ccb9eb89a48d3f3b6e8d3d0e5e207aa",
-    "url": "/fonts/Limelight-Regular.6ccb9eb8.ttf"
+    "revision": "2fe27d9d10cdfccb1baef28a45d5ba90",
+    "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
-    "revision": "ae93399e4cfe13d8c8c5",
-    "url": "/js/app.9a245314.js"
+    "revision": "5500afcd51e126dc05fa",
+    "url": "/js/app.266410b7.js"
   },
   {
     "revision": "531d9b49e140a7381711",
     "url": "/js/chunk-vendors.d8d88180.js"
+  },
+  {
+    "revision": "6ccb9eb89a48d3f3b6e8d3d0e5e207aa",
+    "url": "/fonts/Limelight-Regular.6ccb9eb8.ttf"
   },
   {
     "revision": "b02046ea5d95923dac12259900739f6b",
@@ -64,7 +76,7 @@ self.__precacheManifest = [
     "url": "/fonts/HeptaSlab-VariableFont_wght.a13d86da.ttf"
   },
   {
-    "revision": "05f667d27b1057943aa600d970252249",
+    "revision": "cbe1a4e7535e5e620b9ab604c96457fe",
     "url": "/index.html"
   },
   {
@@ -80,7 +92,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "ae93399e4cfe13d8c8c5",
-    "url": "/css/app.167f0e9f.css"
+    "revision": "5500afcd51e126dc05fa",
+    "url": "/css/app.d118f667.css"
   }
 ];

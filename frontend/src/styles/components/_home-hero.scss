@@ -81,7 +81,7 @@
         align-items: center;
         justify-content: flex-end;
         position: relative;
-        bottom: 8.75rem;
+        bottom: 5.7rem;
         .mobile-txt {
           height: 30%;
           display: flex;
@@ -107,10 +107,10 @@
     .header-container {
       margin: 0;
       justify-content: center;
-
+      background-size: auto 300px;
       .left-container {
         width: 100%;
-        top: 1rem;
+        // top: 1rem;
         .mobile-txt {
           height: 40%;
           justify-content: start;
@@ -130,6 +130,8 @@
   }
 }
 
+@media screen and (max-width: rem(490px)) {
+}
 @media screen and (max-width: rem(320px)) {
   .header-hero {
     .header-container {
