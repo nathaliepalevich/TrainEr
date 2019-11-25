@@ -3,6 +3,8 @@
   height: 87vh;
   overflow: hidden;
   margin-bottom: 10px;
+  border: 1px solid white;
+  box-shadow: -2px -2px 3px 0px #0000000a;
   .md-list {
     cursor: pointer;
     width: 98%;
@@ -14,7 +16,7 @@
     margin: 2px;
     div {
       margin: 2px;
-      background-color: whitesmoke;
+      // background-color: whitesmoke;
     }
   }
 

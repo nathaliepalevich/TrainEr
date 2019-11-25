@@ -12,9 +12,10 @@
   }
 
   .header-txt {
-    background-color: $clr3;
+    // background-color: $clr3;
     font-family: "lato-bold";
     font-size: rem(30px);
+    // padding-left: 10px;
     h3 {
       font-family: "Tangerine-Bold";
       font-size: rem(50px);
@@ -24,8 +25,11 @@
     font-size: rem(25px);
   }
   .scroll-btn {
-    color: $clr1;
-    font-weight: bold;
+    p {
+      text-transform: uppercase;
+      color: $clr3;
+      font-weight: bolder;
+    }
     margin: rem(25px);
     width: rem(562px);
     button {
@@ -90,6 +94,7 @@
         }
         .header-txt {
           font-size: rem(20px);
+          background-color: none;
         }
         .sub-header-txt {
           font-size: rem(18px);
@@ -118,6 +123,7 @@
         }
         .header-txt {
           font-size: 1rem;
+          background-color: none;
         }
         .sub-header-txt {
           font-size: 1rem;
@@ -130,7 +136,17 @@
   }
 }
 
-@media screen and (max-width: rem(490px)) {
+@media screen and (max-width: rem(370px)) and (min-width: rem(350px)) {
+  .header-hero {
+    .header-container {
+      .left-container {
+        height: 83%;
+        top: 10px;
+        justify-content: flex-end;
+        position: relative;
+      }
+    }
+  }
 }
 @media screen and (max-width: rem(320px)) {
   .header-hero {
@@ -150,6 +166,7 @@
         top: 10px;
         .header-txt {
           font-size: 1rem;
+          background-color: none;
         }
         .sub-header-txt {
           font-size: 1rem;

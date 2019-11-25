@@ -51,13 +51,10 @@
   img {
     width: 400px;
     height: auto;
+    object-fit: contain;
   }
 }
-.swal2-actions {
-  button {
-    background: $clr2 !important;
-  }
-}
+
 @media screen and (max-width: rem(768px)) {
   .signup {
     .form-container {

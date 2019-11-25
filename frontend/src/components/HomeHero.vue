@@ -6,7 +6,7 @@
           <div class="header-txt">
             <h2 class="caps">
               Your favorite sport
-              wherever you are.
+              <br />wherever you are.
             </h2>
             <h3>No strings attached.</h3>
           </div>

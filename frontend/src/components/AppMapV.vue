@@ -113,4 +113,8 @@ export default {
 </script>
 
 <style lang="scss">
+.app-map-v {
+  border: 1px solid white;
+  box-shadow: -2px -2px 3px 0px #0000000a;
+}
 </style>
