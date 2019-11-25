@@ -12,13 +12,30 @@ async function query(filterBy = []) {
 
      const collection = await dbService.getCollection('lesson')
      let lessons;
+     // Line 16 - 31: If lesson time passed more than 2 days add a week to lesson time and update mongo
+     let passTimeLessons;
+     let d = new Date(new Date().setDate(new Date().getDate()-2))
      try {
+          passTimeLessons = await collection.find({"dateTime" : { $lt : d}}).toArray();
+          if(passTimeLessons.length) {
+               let futureDate = new Date(d.setDate(new Date().getDate() +7)).toJSON()
+               passTimeLessons.map( async lesson => {
+                     lesson.date = futureDate.match(/\d{4}-\d{2}-\d{2}/)[0]
+                     let start = lesson.start.match(/\d{2}:\d{2}/)[0];
+                     let end = lesson.end.match(/\d{2}:\d{2}/)[0];
+                     lesson.start =  `${lesson.date} ${start}`
+                     lesson.end =  `${lesson.date} ${end}`
+                     lesson.dateTime = `${lesson.date} ${start}`
+                      await updateLesson(lesson)
+                  })
+             }
           if(values[0] === 'filterArr'){
                 lessons = await collection.find({"dateTime" : { $gte : new Date()}}).toArray();
-          }
-          else {
-               lessons = await collection.find({$and:[{ "trainTypes": { $in: values}},{ "dateTime" : { $gte : new Date()}}]}).toArray();
-          }
+               }
+               else {
+                    lessons = await collection.find({$and:[{ "trainTypes": { $in: values}},{ "dateTime" : { $gte : new Date()}}]}).toArray();
+               }
+             
           
           return lessons
      } catch (err) {
