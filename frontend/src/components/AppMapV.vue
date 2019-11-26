@@ -66,7 +66,7 @@ export default {
         marker = new google.maps.Marker({
           position: latLng,
           title: lesson.title,
-          icon: "http://maps.google.com/mapfiles/kml/pal3/icon28.png"
+          icon: "https://maps.google.com/mapfiles/kml/pal3/icon28.png"
         });
         marker.setMap(map);
 

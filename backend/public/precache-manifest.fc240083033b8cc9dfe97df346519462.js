@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f04ca116c6a8428796213da3aee2f29e",
-    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
+    "revision": "b464889840d2a96a5dc30059d9f4ad9a",
+    "url": "/fonts/DancingScript-Regular.b4648898.ttf"
   },
   {
     "revision": "547e5b45a30015596a49c283f0fa7f1a",
     "url": "/logo_transparent.png"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
-  },
-  {
     "revision": "d2e5d1b5ce5a249906667e040a7e8837",
     "url": "/style.css"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
   },
   {
     "revision": "b02046ea5d95923dac12259900739f6b",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.d8d88180.js"
   },
   {
-    "revision": "4c1e6559a85d4f6c6f3595e4f362d208",
+    "revision": "283621d3310161c3ece78b943a0838d2",
     "url": "/index.html"
   },
   {
@@ -40,24 +40,28 @@ self.__precacheManifest = [
     "url": "/img/trainer-mobile-bg-xs.5d770099.jpg"
   },
   {
-    "revision": "fa55cf57720ab21b82e8",
-    "url": "/js/app.ecdff567.js"
-  },
-  {
-    "revision": "9afc148dda39ef8139a07115252dd977",
-    "url": "/fonts/Tangerine-Bold.9afc148d.ttf"
+    "revision": "a77e29b12fcb975f044a",
+    "url": "/js/app.a41637d7.js"
   },
   {
     "revision": "ad4cd34327721459c11a67b4332c945e",
     "url": "/fonts/Parisienne-Regular.ad4cd343.ttf"
   },
   {
-    "revision": "547e5b45a30015596a49c283f0fa7f1a",
-    "url": "/img/logo.547e5b45.png"
+    "revision": "85d339d916479f729938d2911b85bf1f",
+    "url": "/fonts/Lato-Bold.85d339d9.ttf"
   },
   {
     "revision": "6ccb9eb89a48d3f3b6e8d3d0e5e207aa",
     "url": "/fonts/Limelight-Regular.6ccb9eb8.ttf"
+  },
+  {
+    "revision": "547e5b45a30015596a49c283f0fa7f1a",
+    "url": "/img/logo.547e5b45.png"
+  },
+  {
+    "revision": "f04ca116c6a8428796213da3aee2f29e",
+    "url": "/fonts/MajorMonoDisplay-Regular.f04ca116.ttf"
   },
   {
     "revision": "2d36b1a925432bae7f3c53a340868c6e",
@@ -68,8 +72,8 @@ self.__precacheManifest = [
     "url": "/fonts/Lato-Light.2fe27d9d.ttf"
   },
   {
-    "revision": "85d339d916479f729938d2911b85bf1f",
-    "url": "/fonts/Lato-Bold.85d339d9.ttf"
+    "revision": "9afc148dda39ef8139a07115252dd977",
+    "url": "/fonts/Tangerine-Bold.9afc148d.ttf"
   },
   {
     "revision": "a13d86daf6c876278eba72cbc119b912",
@@ -80,10 +84,6 @@ self.__precacheManifest = [
     "url": "/fonts/DeliusSwashCaps-Regular.26a16f98.ttf"
   },
   {
-    "revision": "b464889840d2a96a5dc30059d9f4ad9a",
-    "url": "/fonts/DancingScript-Regular.b4648898.ttf"
-  },
-  {
     "revision": "5e8437e3f0d2776c6cdd8dd46d7f1381",
     "url": "/favicon.png"
   },
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/css/chunk-vendors.075b0f59.css"
   },
   {
-    "revision": "fa55cf57720ab21b82e8",
-    "url": "/css/app.76600a3b.css"
+    "revision": "a77e29b12fcb975f044a",
+    "url": "/css/app.468fef35.css"
   }
 ];

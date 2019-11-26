@@ -125,7 +125,7 @@ export default {
         title: "",
         price: null,
         img:
-          "https://static.onecms.io/wp-content/uploads/sites/35/2019/04/16045733/benefits-yoga-fb.jpg",
+          "static.onecms.io/wp-content/uploads/sites/35/2019/04/16045733/benefits-yoga-fb.jpg",
         start: null,
         end: null,
         date: "",
