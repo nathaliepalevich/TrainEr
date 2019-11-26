@@ -59,7 +59,7 @@
         <div class="flex start align-baseline">
           <div class="address space-between flex align-baseline">
             <h2>Adress</h2>
-            <p>{{lesson.address}}</p>&nbsp; &nbsp;
+            <p>{{lesson.location.address}}</p>&nbsp; &nbsp;
             <div class="position-relative">
               <i class="fa fa-map" @mouseover="isHoverMap =true " @mouseout="isHoverMap = false"></i>
               <div class="modal-body flex column both-align-center">
@@ -128,9 +128,9 @@ export default {
     this.lesson = lesson;
     this.lessonMapImg =
       "https://maps.googleapis.com/maps/api/staticmap?center=" +
-      this.lesson.address +
+      this.lesson.location.address +
       "&zoom=19&size=400x400&markers=color:red|" +
-      this.lesson.address +
+      this.lesson.location.address +
       "&key=AIzaSyBbf-OSd3gYrA2hOp7KFsRK4FxE4R6RCKI";
   },
 

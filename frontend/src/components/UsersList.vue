@@ -29,19 +29,19 @@ export default {
         grabCursor: true,
         loop: true,
         autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-          },
+          delay: 2000,
+          disableOnInteraction: false
+        },
         centeredSlides: true,
-        slidesPerView: "auto",
+        slidesPerView: 3,
         coverflowEffect: {
           rotate: 50,
-          stretch: 0,
+          stretch: 2,
           depth: 200,
           modifier: 1,
           slideShadows: false
         },
-     
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"

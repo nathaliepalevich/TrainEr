@@ -19,67 +19,84 @@ export default {
       google: null,
       map: null,
       markers: [],
-      currWindow: null
+      currWindow: null,
+      currentInfoWindow: null
     };
   },
   methods: {
     async renderLessonsOnMap() {
-      this.google = await gmapsInit();
-      var geocoder = new google.maps.Geocoder();
-      this.markers.forEach(function(marker) {
+      var geocoder = await new google.maps.Geocoder();
+      this.markers.forEach(marker => {
         marker.setMap(null);
       });
+      this.markers = [];
       this.lessons.map(async lesson => {
         let marker;
-        await geocoder.geocode(
-          { address: lesson.address },
-          (results, status) => {
-            if (status == "OK") {
-              const pos = {
-                lat: results[0].geometry.location.lat(),
-                lng: results[0].geometry.location.lng()
-              };
+        let compyLesson;
 
-              marker = new google.maps.Marker({
-                map: this.map,
-                position: results[0].geometry.location,
-                title: lesson.title,
-                icon: "http://maps.google.com/mapfiles/kml/pal3/icon28.png"
-              });
-
-              this.google.maps.event.addListener(this.map, "click", event => {
-                infowindow.close();
-              });
-              const contentString = `
-            <div  class="popup" >
-               <a href="#/lesson/${lesson._id}">
-            <img src="${lesson.img}" >
-            <h1>${lesson.title}</h1>
-            <div>
-            <p>Price: ${lesson.price}</p>
-            <p>Trainer: ${lesson.createdBy.fullName}</p>
-            <p>Time: ${lesson.start}</p>
-            </div>
-           </a>
-            </div>`;
-
-              const infowindow = new google.maps.InfoWindow({
-                content: contentString
-              });
-              marker.addListener("click", () => {
-                infowindow.open(this.map, marker);
-                this.currWindow = marker;
-                EventBus.$emit("LESSON_MARK", lesson);
-              });
-
-              this.markers.push(marker);
-            } else {
-              console.log(
-                "Geocode was not successful for the following reason: " + status
-              );
+        if (!lesson.location.lat) {
+          await geocoder.geocode(
+            { address: lesson.location.address },
+            async (results, status) => {
+              if (status == "OK") {
+                const pos = {
+                  lat: results[0].geometry.location.lat(),
+                  lng: results[0].geometry.location.lng()
+                };
+                compyLesson = JSON.parse(JSON.stringify(lesson));
+                compyLesson.location.lat = pos.lat;
+                compyLesson.location.lng = pos.lng;
+                await this.$store.dispatch({
+                  type: "saveLesson",
+                  editLesson: compyLesson
+                });
+              } else
+                console.log(
+                  "Geocode was not successful for the following reason: ",
+                  status
+                );
             }
-          }
+          );
+        }
+        const latLng = new google.maps.LatLng(
+          lesson.location.lat,
+          lesson.location.lng
         );
+        const map = this.map;
+        marker = new google.maps.Marker({
+          position: latLng,
+          title: lesson.title,
+          icon: "http://maps.google.com/mapfiles/kml/pal3/icon28.png"
+        });
+        marker.setMap(map);
+
+        const contentString = `
+                      <div class="popup" >
+                        <a href="#/lesson/${lesson._id}">
+                        <img src="${lesson.img}" >
+                        <h1>${lesson.title}</h1>
+                        <div>
+                          <p>Price: ${lesson.price}</p>
+                          <p>Trainer: ${lesson.createdBy.fullName}</p>
+                          <p>Time: ${lesson.start}</p>
+                        </div>
+                        </a>
+                      </div>`;
+
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        marker.addListener("click", () => {
+          if (this.currentInfoWindow) {
+            this.currentInfoWindow.close();
+          }
+          this.currentInfoWindow = infowindow;
+          infowindow.open(this.map, marker);
+          this.currWindow = marker;
+          EventBus.$emit("LESSON_MARK", lesson);
+        });
+        this.markers.push(marker);
       });
     }
   },
@@ -90,17 +107,11 @@ export default {
   },
 
   async created() {
-    await this.renderLessonsOnMap();
-    this.map = new google.maps.Map(this.$el);
+    this.google = await gmapsInit();
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(pos => {
         const latLng = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-
-        this.map = new google.maps.Map(this.$el, {
-          zoom: 12,
-          center: latLng
-        });
         new google.maps.Marker({
           position: latLng,
           map: this.map,
@@ -108,6 +119,12 @@ export default {
         });
       });
     }
+    this.map = await new google.maps.Map(this.$el, {
+      zoom: 11,
+      center: new google.maps.LatLng(32.0752194, 34.7807962)
+    });
+
+    await this.renderLessonsOnMap();
   }
 };
 </script>

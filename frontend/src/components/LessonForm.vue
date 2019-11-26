@@ -75,7 +75,7 @@
 
             <md-field>
               <label>Lesson Location</label>
-              <md-input type="text" v-model="newLesson.address" required></md-input>
+              <md-input type="text" v-model="newLesson.location.address" required></md-input>
               <span class="md-helper-text">City, Street, Home Number</span>
             </md-field>
 
@@ -86,14 +86,18 @@
           </div>
         </md-card-content>
         <div class="flex justify-center precent-width-100">
-          <md-button class="md-raised" type="submit" :disabled="formValidation || isUploading">{{addSaveBtnTxt}}</md-button>
+          <md-button
+            class="md-raised"
+            type="submit"
+            :disabled="formValidation || isUploading"
+          >{{addSaveBtnTxt}}</md-button>
           <md-button class="md-raised" @click="cancelChanges">{{cancelBtnTxt}}</md-button>
           <md-button class="md-raised" @click="deleteLesson" v-if="lesson._id">Delete Lesson</md-button>
         </div>
       </form>
-         <div :class="{none: !isUploading }" class="loading-spinner">
-               <md-progress-spinner class="md-accent" :md-stroke="3" md-mode="indeterminate"></md-progress-spinner>
-            </div>
+      <div :class="{none: !isUploading }" class="loading-spinner">
+        <md-progress-spinner class="md-accent" :md-stroke="3" md-mode="indeterminate"></md-progress-spinner>
+      </div>
     </md-card>
   </section>
 </template>
@@ -104,7 +108,7 @@ import VueCal from "vue-cal";
 import "vue-cal/dist/vuecal.css";
 import { Datetime } from "vue-datetime";
 import axios from "axios";
-import SocketService from '../services/SocketService.js'
+import SocketService from "../services/SocketService.js";
 
 export default {
   name: "lesson-form",
@@ -126,7 +130,11 @@ export default {
         end: null,
         date: "",
         dateTime: "",
-        address: "",
+        location: {
+          address: "",
+          lat: null,
+          lng: null
+        },
         traineesCapacity: null,
         trainTypes: [],
         createdBy: {
@@ -148,8 +156,7 @@ export default {
   },
   methods: {
     async handleUploadImage(ev) {
-
-          this.isUploading = true;
+      this.isUploading = true;
       const form = new FormData();
       form.append("imgUpload", ev.target.files[0]);
       const res = await axios.post(
@@ -157,7 +164,7 @@ export default {
         form
       );
       this.newLesson.img = await res.data.secure_url;
-        this.isUploading = false;
+      this.isUploading = false;
     },
 
     parseDate() {

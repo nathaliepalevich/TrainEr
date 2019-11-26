@@ -117,8 +117,6 @@ export default {
       if (!this.signupCred.userImg) {
         this.signupCred.userImg = require("../assets/images/user_icon.png");
       }
-      console.log("signupCred.isTrainer", this.signupCred.isTrainer);
-
       let user = await this.$store.dispatch({
         type: "saveUser",
         editUser: this.signupCred

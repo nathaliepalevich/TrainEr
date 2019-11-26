@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.bfa6cf37569c933052ff7f4c02ea18ca.js"
+  "/precache-manifest.db51857c0fd4004da871a414715b8505.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "train-er"});
